@@ -1,0 +1,25 @@
+<div class="container mt-5">
+    <div class="row" *ngFor="let deliver of lista">
+
+        <a routerLink="/deliverydetails/detalhes/{{deliver.id}}">
+            <div class="card shadow" >
+                <div class="row ">
+                  <div class="col-lg-1 col-md-2 col-sm-2  col-xs-12  image">
+                    <img src="../../../../assets/logo.jpg" alt="..." class="img-fluid img-thumbnail">
+                  </div>
+                  <div class="col-lg-11 col-md-10  col-sm-10  col-xs-12">
+                    <div class="card-body">
+                        <div class="body-text">
+                            <h5 class="card-title">{{deliver.name}}</h5>
+                            <span>{{deliver.id}}</span>
+                        </div>
+                      <p class="card-text">{{deliver.address}}</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+

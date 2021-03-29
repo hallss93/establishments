@@ -1,0 +1,102 @@
+<div class="container mt-5">
+  <div class="card shadow mb-5" >
+
+    <div class="row">
+      <div class="col-lg-2 col-md-3 col-sm-3    image">
+        <button class="btn" routerLink="/delivery">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+        </svg>
+      </button>
+        <img src="../../../../assets/logo.jpg" alt="..." class=" img-thumbnail">
+      </div>
+      <div class="col-lg-10 col-md-9  col-sm-9  ">
+        <div class="card-body">
+            <div class="body-text">
+                <h5 class="card-title">{{lista[0].name}}</h5>
+                <span>ID: {{lista[0].id}}</span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row info  mt-5  mb-3">
+
+      <p>Informações básicas</p>
+      <hr>
+
+      <form class="row g-3  mt-3">
+          <div class="col-md-5">
+              <label for="inputname" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="inputtext" disabled  [value]="lista[0].name">
+          </div>
+          <div class="col-md-3">
+              <label for="inputcity" class="form-label">Cidade</label>
+              <input type="text" class="form-control" id="inputcity" disabled  [value]="lista[0].city">
+          </div>
+          <div class="col-md-4">
+              <label for="inputendereco" class="form-label">Endereço</label>
+              <input type="text" class="form-control" id="inputendereco" disabled  [value]="lista[0].address">
+          </div>
+      
+
+      <p class="mt-5">Financeiro</p>
+      <hr class="mb-3">
+
+      <div class="col-md-4">
+          <label for="inputbank" class="form-label">Banco</label>
+          <select class="form-select" aria-label="Disabled select example" disabled>
+            <option value="1" selected >{{lista[0].banco}}</option>
+          </select>
+      </div>
+      <div class="col-md-4">
+          <label for="inputcity" class="form-label">Tipo de conta</label>
+          <select class="form-select" aria-label="Disabled select example" disabled>
+            <option value="1" selected>{{lista[0].type_count}}</option>
+          </select>
+      </div>
+      <div class="col-md-4">
+          <label for="inputendereco" class="form-label">CPF/CNPJ</label>
+          <input type="text" class="form-control" id="inputendereco"   disabled [value]="lista[0].cpf_cnpj">
+      </div>
+
+      <div class="col-md-4">
+          <div class="row align-items-end g-2">
+            <div class="col-md-6 col-sm-6  col-xs-6">
+                <label for="inputagencia" class="form-label">Agência</label>
+                <input type="number" class="form-control" id="inputagencia" disabled [value]="lista[0].ag">
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2 ">
+                <input type="number" class="form-control" id="inputagenciadig" disabled [value]="lista[0].dig_ag">
+            </div>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="row align-items-end g-2">
+          <div class="col-md-6 col-sm-6  col-xs-6">
+              <label for="inputconta" class="form-label">Conta</label>
+              <input type="number" class="form-control" id="inputconta" disabled [value]="lista[0].count">
+          </div>
+          <div class="col-md-2 col-sm-2 col-xs-2 ">
+              <input type="number" class="form-control" id="inputcontadig" disabled [value]="lista[0].dig_count">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <label for="inputbank" class="form-label">Saque automático</label>
+        <select class="form-select" aria-label="Disabled select example" disabled>
+          <option value="1" selected>{{lista[0].type_saque}}</option>
+        </select>
+      </div>
+
+      <div class="col-12  columnButton mt-4">
+        <button type="submit" class="btn save">SALVAR</button>
+      </div>
+
+    </form>
+    </div>
+</div>
+</div>

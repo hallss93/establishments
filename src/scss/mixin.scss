@@ -1,0 +1,32 @@
+@mixin tamanho-fonte($fonte){
+    font-size: $fonte!important;
+}
+
+@mixin largura($largura){
+    width: $largura;
+}
+
+@mixin altura($altura){
+    height: $altura;
+}
+
+@mixin margens($top, $direita, $inferior, $esquerda){
+    margin-top:$top;
+    margin-left:$direita;
+    margin-bottom:$inferior;
+    margin-right:$esquerda;
+}
+  
+@mixin padding($top, $direita, $inferior, $esquerda){
+    padding-top:$top;
+    padding-left:$direita;
+    padding-bottom:$inferior;
+    padding-right:$esquerda;
+    
+}
+  
+@mixin bordas-arredondadas($radius) {
+    -moz-border-radius:$radius;
+    -webkit-border-radius:$radius;
+    border-radius: $radius;
+}

@@ -1,0 +1,66 @@
+@import '../../../../scss/styles.scss';
+
+span{
+    color: $cor-paragrafo;
+}
+
+.card{
+    overflow:hidden;
+}
+
+
+
+.image{  
+    @media (max-width:573px){
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;  
+        @include margens( 5px, 0, 0, 0);     
+    }
+
+}
+
+img{
+   @include largura(74px);
+   @include altura(74px);
+}
+
+.body-text{
+    display: flex;
+    flex-direction: column;
+   
+    @media (max-width:573px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include padding(0, 10px, 0, 10px);
+
+    hr{
+        @include largura(98%);
+        @include margens(-5px, 0, 0, 0);
+
+        @media (max-width:573px){
+            @include largura(95%);
+        }
+    }
+
+}
+
+.save{
+    @include bordas-arredondadas(60px);
+    background-color: $cor-button;
+    color: $text-button;
+}
+
+.columnButton{
+    display: flex;
+    justify-content: flex-end;
+}

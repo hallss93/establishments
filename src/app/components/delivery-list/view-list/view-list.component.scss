@@ -1,0 +1,34 @@
+@import '../../../../scss/styles.scss';
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.card{
+    @include  margens(0, 0 , 6px, 0);
+    @include padding(0, 3px, 0, 0); 
+
+    @media (max-width:574px){
+        @include padding(3px, 3px, 0, 3px);
+    }
+}
+
+
+
+.body-text{
+    display: flex;
+  
+    h5{
+        font-weight: bold;
+    }
+  span{
+     @include  margens(0, 10px, 0, 0);
+      color:$cor-paragrafo;
+  }
+}
+
+.card-text{
+    color: $cor-paragrafo;
+}
+
